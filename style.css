@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #0f172a;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+    height: 90vh;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero span {
+    color: #38bdf8;
+}
+
+.hero button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    background: #38bdf8;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* SECTIONS */
+section {
+    padding: 60px 40px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* CARDS */
+.card {
+    background: white;
+    margin: 40px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* SKILLS */
+.skill-box {
+    background: #e0f2fe;
+    padding: 25px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: transform 0.3s;
+}
+
+.skill-box:hover {
+    transform: scale(1.1);
+}
+
+/* PROJECTS */
+.project-card {
+    background: #1e293b;
+    color: white;
+    padding: 25px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+/* CONTACT */
+.contact {
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.project-card {
+    cursor: pointer;
+}
+/* MODAL STYLES */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 320px;
+    text-align: center;
+    animation: popup 0.3s ease;
+}
+
+.modal-content input,
+.modal-content textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.modal-content button {
+    padding: 10px 20px;
+    background: #38bdf8;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+.close {
+    float: right;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+@keyframes popup {
+    from {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+

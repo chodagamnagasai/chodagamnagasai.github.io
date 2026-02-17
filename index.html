@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Surya | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <h2 class="logo">Surya Chodagam</h2>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <h1>Hi, I'm <span>Surya Chodagam</span></h1>
+        <p>Aspiring Cloud & Web Developer</p>
+        <button onclick="scrollToSection('contact')">Hire Me</button>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="card">
+        <h2>About Me</h2>
+        <p>
+            I am a passionate learner interested in Cloud Computing, AWS,
+            and Web Development. I enjoy building scalable and serverless applications. I am currently pursuing 2nd year of CSE. Enthusiast to work as an intern.
+        </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="grid">
+            <div class="skill-box">HTML</div>
+            <div class="skill-box">CSS</div>
+            <div class="skill-box">JavaScript</div>
+            <div class="skill-box">AWS</div>
+            <div class="skill-box">Cloud Computing</div>
+            <div class="skill-box">Git</div>
+            <div class="skill-box">Python</div>
+            <div class="skill-box">AI/ML</div>
+            <div class="skill-box">JAVA</div>
+            <div class="skill-box">SQL</div>
+
+
+
+
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="grid">
+            <div class="project-card" data-url="https://github.com/chodagamnagasai">
+                <h3>Portfolio Website</h3>
+                <p>Static website hosted on AWS</p>
+            </div>
+            <div class="project-card" data-url="https://github.com/chodagamnagasai">
+                <h3>Serverless API</h3>
+                <p>Lambda + API Gateway project</p>
+            </div>
+            <div class="project-card" data-url="https://github.com/chodagamnagasai/ai-rock-paper-scissors">
+                <h3>AI based Game</h3>
+                <p>Rock-paper-scissors game using computer vision and AI</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="card contact">
+        <h2>Contact</h2>
+        <p>Email: surya@email.com</p>
+        <button onclick="showMessage()">Send Message</button>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 Surya | Built with ❤️ & Cloud</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <!-- CONTACT MODAL -->
+<div id="contactModal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <h2>Contact Me</h2>
+
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message"></textarea>
+
+        <button onclick="submitMessage()">Send</button>
+    </div>
+</div>
+
+</body>
+</html>
