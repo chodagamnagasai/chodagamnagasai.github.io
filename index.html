@@ -2,104 +2,207 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>SAI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sai Chodagam</title>
+    <meta name="description" content="Surya Chodagam – Cloud & Web Developer skilled in AWS, Web Development, and AI.">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- NAVBAR -->
-    <nav>
-        <h2 class="logo">SAI CHODAGAM</h2>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+<!-- NAVBAR -->
+<nav class="navbar glass">
+    <h1 class="logo">NAGA SAI</h1>
+    <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-    <!-- HERO SECTION -->
-    <section class="hero">
-        <h1>Hi, I'm <span>SAI CHODAGAM</span></h1>
-        <p>Aspiring Cloud & Web Developer</p>
-        <button onclick="scrollToSection('contact')">Hire Me</button>
-    </section>
+<!-- CINEMATIC HERO -->
+<header class="hero-cinematic">
 
-    <!-- ABOUT -->
-    <section id="about" class="card">
-        <h2>About Me</h2>
-        <p>
-            I am a passionate learner interested in Cloud Computing, AWS,
-            and Web Development. I enjoy building scalable and serverless applications. I am currently pursuing 2nd year of CSE. Enthusiast to work as an intern.
-        </p>
-    </section>
+    <!-- LEFT -->
+    <div class="hero-left">
+        <h2>
+            I am,</h2>
+        <h1>
+            <span>SAI CHODAGAM</span>
+        </h1>
 
-    <!-- SKILLS -->
-    <section id="skills">
-        <h2 class="section-title">Skills</h2>
-        <div class="grid">
-            <div class="skill-box">HTML</div>
-            <div class="skill-box">CSS</div>
-            <div class="skill-box">JavaScript</div>
-            <div class="skill-box">AWS</div>
-            <div class="skill-box">Cloud Computing</div>
-            <div class="skill-box">Git</div>
-            <div class="skill-box">Python</div>
-            <div class="skill-box">AI/ML</div>
-            <div class="skill-box">JAVA</div>
-            <div class="skill-box">SQL</div>
-        </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects">
-        <h2 class="section-title">Projects</h2>
-        <div class="grid">
-            <div class="project-card" data-url="https://github.com/chodagamnagasai">
-                <h3>Portfolio Website</h3>
-                <p>Static website hosted on AWS</p>
-            </div>
-            <div class="project-card" data-url="https://github.com/chodagamnagasai">
-                <h3>Score Predictor</h3> 
-                <p>AI model which will predict marks a student can obtain based on his Academic Activity</p>
-            </div>
-            <div class="project-card" data-url="https://github.com/chodagamnagasai/ai-rock-paper-scissors">
-                <h3>AI based Game</h3>
-                <p>Rock-paper-scissors game using computer vision and AI</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="card contact">
-        <h2>Contact</h2>
-        <p>Mobile: +91 6301275929
-        <p>Email: chodagamnagasai1@gmail.com</p>
-        <button onclick="showMessage()">Send Message</button>
-    </section>
-
-    <!-- FOOTER -->
-    <footer>
-        <p>© 2026 Surya | Built with ❤️ & Cloud</p>
-    </footer>
-
-    <script src="script.js"></script>
-    <!-- CONTACT MODAL -->
-<div id="contactModal" class="modal">
-    <div class="modal-content">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <h2>Contact Me</h2>
-
-        <input type="text" id="name" placeholder="Your Name" required>
-        <input type="email" id="email" placeholder="Your Email" required>
-        <textarea id="message" placeholder="Your Message"></textarea>
-
-        <button onclick="submitMessage()">Send</button>
+        <a href="assets/sairesume.pdf" download class="resume-btn">
+            Download Resume
+        </a>
     </div>
-</div>
 
+    <!-- CENTER (AVATAR) -->
+    <div class="hero-center">
+        <img src="assets/avatar.png" alt="Surya Avatar" class="hero-avatar">
+    </div>
+
+    <!-- RIGHT -->
+    <div class="hero-right">
+        <p>
+            A Computer Science undergraduate passionate about
+            <strong>Cloud Computing</strong>, <strong>AWS</strong>,
+            and <strong>Web Development</strong>.
+            <br><br>
+            Focused on building scalable, performant, and
+            real-world applications with modern technologies.
+        </p>
+    </div>
+
+</header>
+
+
+<!-- ABOUT -->
+<section id="about" class="section glass">
+    <h2>About Me</h2>
+    <p>
+        I am a Computer Science undergraduate passionate about Cloud Computing,
+        AWS, and Web Development. I enjoy building scalable and serverless
+        applications and am actively looking for internship opportunities.
+    </p>
+</section>
+<!-- EDUCATION -->
+<section id="education" class="section">
+    <h2>Education</h2>
+
+    <div class="education-grid">
+
+        <div class="education-card glass">
+            <span class="edu-year">2022 – 2026</span>
+            <h3>Bachelor of Technology (B.Tech)</h3>
+            <h3 class="edu-college">SRKR Engineering College</h3>
+            <p class="edu-inst">Computer Science & Engineering</p>
+        </div>
+
+        <div class="education-card glass">
+            <span class="edu-year">2022 – 2024</span>
+            <h3>Intermediate (12th)</h3>
+            <h3 class="edu-college">Bharatiya Vidya Bhavans</h3>
+            <p class="edu-inst">Science (Maths, Physics, Chemistry)</p>
+        </div>
+
+        <div class="education-card glass">
+            <span class="edu-year">2021 – 2022</span>
+            <h3>Secondary School (10th)</h3>
+            <h3 class="edu-college">Bharatiya Vidya Bhavans</h3>
+            <p class="edu-inst">CBSE</p>
+        </div>
+
+    </div>
+</section>
+<!-- SKILLS -->
+<section id="skills" class="section">
+    <h2>Skills</h2>
+
+    <div class="skills-grid">
+
+        <div class="skill-card glass">
+            <h3>Frontend</h3>
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                <span>HTML</span>
+            </div>
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                <span>CSS</span>
+            </div>
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+                <span>JavaScript</span>
+            </div>
+        </div>
+
+        <div class="skill-card glass">
+            <h3>Cloud & Tools</h3>
+            <div class="skill-item">
+                <img src="https://tse2.mm.bing.net/th/id/OIP.Wan48DmTomFcXEWcrAPKuwHaHa?cb=defcache2&defcache=1&w=2560&h=2560&rs=1&pid=ImgDetMain&o=7&rm=3" alt="AWS">
+                <span>AWS</span>
+            </div>
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                <span>Git</span>
+            </div>
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Cloud">
+                <span>Cloud Computing</span>
+            </div>
+        </div>
+
+        <div class="skill-card glass">
+            <h3>Programming</h3>
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                <span>Python</span>
+            </div>
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                <span>Java</span>
+            </div>
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
+                <span>SQL</span>
+            </div>
+        </div>
+
+        <div class="skill-card glass">
+            <h3>AI / ML</h3>
+            <div class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="ML">
+                <span>Tensor Flow</span>
+            </div>
+            <div class="skill-item">
+                <img src="data:image/webp;base64,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" alt="ML">
+                <span>Computer Vision</span>
+            </div>
+            <div class="skill-item">
+                <img src="data:image/webp;base64,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" alt="ML">
+                <span>Machine Learning</span>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+    <h2>Projects</h2>
+
+    <div class="projects-grid">
+        <div class="project-card glass" data-link="https://github.com/chodagamnagasai">
+            <h3>Portfolio Website</h3>
+            <p>Responsive static website hosted on AWS.</p>
+        </div>
+
+        <div class="project-card glass" data-link="https://github.com/chodagamnagasai">
+            <h3>Score Predictor</h3>
+            <p>ML model predicting student performance.</p>
+        </div>
+
+        <div class="project-card glass" data-link="https://github.com/chodagamnagasai/ai-rock-paper-scissors">
+            <h3>AI Rock Paper Scissors</h3>
+            <p>Computer vision based AI game.</p>
+        </div>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section glass contact">
+    <h2>Contact</h2>
+    <p>Email: <strong>chodagamnagasai1@gmail.com</strong></p>
+    <p>Mobile: <strong>+91 6301275929</strong></p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2026 Surya • Built with 💙 & Cloud</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
-
-
-
