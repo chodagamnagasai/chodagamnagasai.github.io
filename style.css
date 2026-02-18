@@ -97,7 +97,7 @@ section {
 }
 
 .skill-box:hover {
-    transform: scale(1.2);
+    transform: scale(1.0);
 }
 
 /* PROJECTS */
@@ -182,6 +182,7 @@ footer {
         opacity: 1;
     }
 }
+
 
 
 
