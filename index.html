@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Chodagam • Cloud Engineer • Web Developer • AI Enthusiast</title>
+    <meta name="description"
+        content="Sai Chodagam - Cloud Engineer and Web Developer skilled in AWS, JavaScript, and AI. Portfolio showcasing projects, skills, and contact information.">
+    <link rel="icon" href="favicon.png" type="image/png">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap"
+        rel="stylesheet">
+
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Sai Chodagam",
+    "url": "https://chodagamnagasai.github.io/",
+    "sameAs": [
+      "https://github.com/chodagamnagasai",
+      "https://www.linkedin.com/in/chodagamnagasai",
+      "https://www.instagram.com/sai_chodagam/"
+    ],
+    "jobTitle": "Cloud Engineer & Web Developer",
+    "worksFor": { "@type": "Organization", "name": "Freelance" }
+  }
+  </script>
+
+    <!-- Lenis smooth scroll -->
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-theme="dark">
+
+    <!-- CURSOR FOLLOWER -->
+    <div class="cursor-dot" id="cursor-dot"></div>
+    <div class="cursor-ring" id="cursor-ring"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar glass" id="navbar">
+        <h1 class="logo" onclick="scrollToSection('top')">SAI CHODAGAM</h1>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><button id="fun-mode" class="fun-btn" aria-label="Play Bug Squasher">🐛 Bug Squasher</button></li>
+            <li><button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">🌙</button></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!-- HERO -->
+    <header class="hero-cinematic" id="top">
+        <div class="hero-bg-orb orb-1"></div>
+        <div class="hero-bg-orb orb-2"></div>
+
+        <!-- LEFT -->
+        <div class="hero-left" data-aos="fade-right" data-aos-delay="100">
+            <p class="hero-greeting">Hello, I am</p>
+            <h1 class="hero-name">SAI<br><span>CHODAGAM</span></h1>
+            <a href="assets/sairesume.pdf" download class="resume-btn">
+                <span>Download Resume</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <polyline points="7 10 12 15 17 10" />
+                    <line x1="12" y1="15" x2="12" y2="3" />
+                </svg>
+            </a>
+        </div>
+
+        <!-- CENTER (AVATAR) -->
+        <div class="hero-center" data-aos="zoom-in" data-aos-delay="200">
+            <div class="avatar-glow"></div>
+            <img class="hero-avatar parallax float" data-speed="0.2" src="assets/avatar.png" alt="Sai Chodagam Avatar"
+                loading="eager">
+        </div>
+
+        <!-- RIGHT -->
+        <div class="hero-right" data-aos="fade-left" data-aos-delay="100">
+            <h3 class="hero-role">Cloud &amp; Web Developer</h3>
+            <p class="hero-sub">Building scalable applications using AWS, AI &amp; modern web technologies.</p>
+            <div class="hero-actions">
+                <a href="#projects" class="btn-primary">View Projects</a>
+                <a href="#contact" class="btn-outline">Contact Me</a>
+            </div>
+        </div>
+
+        <!-- SCROLL HINT -->
+        <div class="scroll-hint">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </header>
+
+    <!-- ABOUT -->
+    <section id="about" class="section glass" data-aos="fade-up">
+        <div class="section-label">01 / About</div>
+        <h2>About Me</h2>
+        <p>
+            I am a Computer Science undergraduate passionate about Cloud Computing,
+            AWS, and Web Development. I enjoy building scalable and serverless
+            applications and am actively looking for internship opportunities.
+        </p>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section" data-aos="fade-up">
+        <div class="section-label">02 / Education</div>
+        <h2>Education</h2>
+        <div class="education-grid">
+
+            <div class="education-card glass tilt" data-aos="fade-up" data-aos-delay="0">
+                <span class="edu-year">2024 – 2028</span>
+                <h3>Bachelor of Technology (B.Tech)</h3>
+                <a class="edu-college" href="https://srkrec.edu.in/" target="_blank" rel="noopener">SRKR Engineering
+                    College</a>
+                <p class="edu-inst">Computer Science &amp; Engineering</p>
+            </div>
+
+            <div class="education-card glass tilt" data-aos="fade-up" data-aos-delay="80">
+                <span class="edu-year">2022 – 2024</span>
+                <h3>Intermediate (12th)</h3>
+                <a class="edu-college" href="https://www.bvbbvrm.ac.in/contactus.html" target="_blank"
+                    rel="noopener">Bharatiya Vidya Bhavans</a>
+                <p class="edu-inst">Science (Maths, Physics, Chemistry)</p>
+            </div>
+
+            <div class="education-card glass tilt" data-aos="fade-up" data-aos-delay="160">
+                <span class="edu-year">2020 – 2022</span>
+                <h3>Secondary School (10th)</h3>
+                <a class="edu-college" href="#" target="_blank" rel="noopener">Sri Chaitanya Techno School</a>
+                <p class="edu-inst">CBSE / General Studies</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section" data-aos="fade-up">
+        <div class="section-label">03 / Skills</div>
+        <h2>Skills</h2>
+        <div class="skills-grid">
+
+            <div class="skill-card glass tilt" data-aos="fade-up" data-aos-delay="0">
+                <h3>☁️ Cloud &amp; DevOps</h3>
+                <div class="skill-item"><img src="https://cdn.simpleicons.org/amazonaws/FF9900" alt="AWS"
+                        loading="lazy"><span>Amazon Web Services</span></div>
+                <div class="skill-item"><img src="https://cdn.simpleicons.org/git/F05032" alt="Git"
+                        loading="lazy"><span>Git &amp; GitHub</span></div>
+                <div class="skill-item"><img src="https://cdn.simpleicons.org/linux/FCC624" alt="Linux"
+                        loading="lazy"><span>Linux</span></div>
+            </div>
+
+            <div class="skill-card glass tilt" data-aos="fade-up" data-aos-delay="80">
+                <h3>🌐 Web Development</h3>
+                <div class="skill-item"><img src="https://cdn.simpleicons.org/html5/E34F26" alt="HTML"
+                        loading="lazy"><span>HTML5</span></div>
+                <div class="skill-item"><img src="https://cdn.simpleicons.org/css3/1572B6" alt="CSS"
+                        loading="lazy"><span>CSS3</span></div>
+                <div class="skill-item"><img src="https://cdn.simpleicons.org/javascript/F7DF1E" alt="JS"
+                        loading="lazy"><span>JavaScript</span></div>
+            </div>
+
+            <div class="skill-card glass tilt" data-aos="fade-up" data-aos-delay="160">
+                <h3>🤖 AI &amp; Data</h3>
+                <div class="skill-item"><img src="https://cdn.simpleicons.org/python/3776AB" alt="Python"
+                        loading="lazy"><span>Python</span></div>
+                <div class="skill-item"><img src="https://cdn.simpleicons.org/tensorflow/FF6F00" alt="TensorFlow"
+                        loading="lazy"><span>TensorFlow</span></div>
+                <div class="skill-item"><img src="https://cdn.simpleicons.org/scikitlearn/F7931E" alt="ML"
+                        loading="lazy"><span>Machine Learning</span></div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section" data-aos="fade-up">
+        <div class="section-label">04 / Projects</div>
+        <h2>Projects</h2>
+        <div class="projects-grid">
+
+            <div class="project-card glass tilt" data-link="https://chodagamnagasai.github.io/" data-aos="fade-up"
+                data-aos-delay="0">
+                <div class="project-img-wrap">
+                    <img src="assets/portfolioss.png" alt="Portfolio Website" loading="lazy">
+                    <div class="project-overlay"><span>View Project ↗</span></div>
+                </div>
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+                    <p class="project-desc">A modern responsive portfolio showcasing my work, skills, and projects.
+                        Built with a cinematic UI and deployed using cloud technologies.</p>
+                    <p class="project-tech"><strong>Tech:</strong> HTML, CSS, JavaScript, AWS / GitHub Pages</p>
+                    <div class="project-links">
+                        <a href="https://github.com/chodagamnagasai/chodagamnagasai.github.io" target="_blank"
+                            rel="noopener noreferrer">GitHub</a>
+                        <a href="https://chodagamnagasai.github.io/" target="_blank" rel="noopener noreferrer">Live</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card glass tilt" data-link="https://github.com/chodagamnagasai" data-aos="fade-up"
+                data-aos-delay="80">
+                <div class="project-img-wrap">
+                    <img src="assets/score.png" alt="Score Predictor" loading="lazy">
+                    <div class="project-overlay"><span>View Project ↗</span></div>
+                </div>
+                <div class="project-content">
+                    <h3>Student Score Predictor</h3>
+                    <p class="project-desc">Machine Learning model that predicts student performance based on study
+                        habits. Helps analyze patterns and improve academic outcomes.</p>
+                    <p class="project-tech"><strong>Tech:</strong> Python, Scikit-learn, Pandas</p>
+                    <div class="project-links">
+                        <a href="https://github.com/chodagamnagasai" target="_blank"
+                            rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card glass tilt" data-link="https://github.com/chodagamnagasai/ai-rock-paper-scissors"
+                data-aos="fade-up" data-aos-delay="160">
+                <div class="project-img-wrap">
+                    <img src="assets/rps.png" alt="AI Rock Paper Scissors" loading="lazy">
+                    <div class="project-overlay"><span>View Project ↗</span></div>
+                </div>
+                <div class="project-content">
+                    <h3>AI Rock Paper Scissors</h3>
+                    <p class="project-desc">Real-time hand gesture recognition system using computer vision. Detects
+                        user moves via webcam and plays against an AI opponent.</p>
+                    <p class="project-tech"><strong>Tech:</strong> Python, OpenCV, TensorFlow</p>
+                    <div class="project-links">
+                        <a href="https://github.com/chodagamnagasai/ai-rock-paper-scissors" target="_blank"
+                            rel="noopener noreferrer">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section glass contact" data-aos="fade-up">
+        <div class="section-label">05 / Contact</div>
+        <h2>Contact</h2>
+        <div class="contact-info">
+            <a href="mailto:chodagamnagasai1@gmail.com" class="contact-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                </svg>
+                <span>chodagamnagasai1@gmail.com</span>
+            </a>
+            <a href="tel:+916301275929" class="contact-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path
+                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.1 19.79 19.79 0 0 1 1.6 4.5 2 2 0 0 1 3.56 2.28h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 9.9a16 16 0 0 0 6.19 6.19l1.8-1.8a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                <span>+91 6301275929</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 <span>SAI CHODAGAM</span> • Built with passion &amp; caffeine ☕</p>
+    </footer>
+
+    <!-- SOCIAL SIDEBAR -->
+    <div class="social-sidebar" id="social-sidebar">
+        <div class="social-toggle" aria-label="Social links">&#10095;</div>
+        <div class="social-links">
+            <a href="https://github.com/chodagamnagasai" target="_blank" rel="noopener" aria-label="GitHub">
+                <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub" loading="lazy">
+            </a>
+            <a href="https://www.linkedin.com/in/chodagamnagasai" target="_blank" rel="noopener" aria-label="LinkedIn">
+                <img src="https://cdn.simpleicons.org/linkedin/0A66C2" alt="LinkedIn" loading="lazy">
+            </a>
+            <a href="https://www.instagram.com/sai_chodagam/" target="_blank" rel="noopener" aria-label="Instagram">
+                <img src="https://cdn.simpleicons.org/instagram/E4405F" alt="Instagram" loading="lazy">
+            </a>
+            <a href="mailto:chodagamnagasai1@gmail.com" aria-label="Gmail">
+                <img src="https://cdn.simpleicons.org/gmail/EA4335" alt="Gmail" loading="lazy">
+            </a>
+        </div>
+    </div>
+
+    <!-- BACK TO TOP -->
+    <button id="back-to-top" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
