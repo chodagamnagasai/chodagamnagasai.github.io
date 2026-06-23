@@ -32,8 +32,8 @@ html {
 
 /* ── Light Theme ── */
 [data-theme="light"] {
-    --bg: #f0f4f8;
-    --bg-secondary: #e2e8f0;
+    --bg: #c8e1b6;
+    --bg-secondary: #c7e3ad;
     --text: #0f172a;
     --text-muted: #475569;
     --glass-bg: rgba(255, 255, 255, 0.55);
@@ -56,11 +56,11 @@ html {
 
 /* ── Dark Theme ── */
 [data-theme="dark"] {
-    --bg: #0a0e27;
-    --bg-secondary: #141829;
+    --bg: #000c57;
+    --bg-secondary: #00115c;
     --text: #f1f5f9;
     --text-muted: #8b94a5;
-    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-bg: rgba(5, 0, 80, 0.05);
     --glass-bg-hover: rgba(255, 255, 255, 0.09);
     --glass-border: rgba(255, 255, 255, 0.12);
     --primary: #10b981;
