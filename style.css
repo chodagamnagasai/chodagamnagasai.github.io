@@ -56,26 +56,26 @@ html {
 
 /* ── Dark Theme ── */
 [data-theme="dark"] {
-    --bg: #020617;
-    --bg-secondary: #0f172a;
-    --text: #e2e8f0;
-    --text-muted: #94a3b8;
-    --glass-bg: rgba(255, 255, 255, 0.06);
-    --glass-bg-hover: rgba(255, 255, 255, 0.10);
-    --glass-border: rgba(255, 255, 255, 0.10);
-    --primary: #38bdf8;
-    --accent: #cf51c2;
-    --edu-year-bg: linear-gradient(90deg, #38bdf8, #cf51c2);
-    --edu-year-text: #020617;
-    --edu-college: #94a3b8;
-    --nav-text: #e2e8f0;
-    --social-bg: rgba(255, 255, 255, 0.07);
-    --social-hover: rgba(255, 255, 255, 0.14);
+    --bg: #0a0e27;
+    --bg-secondary: #141829;
+    --text: #f1f5f9;
+    --text-muted: #8b94a5;
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --glass-bg-hover: rgba(255, 255, 255, 0.09);
+    --glass-border: rgba(255, 255, 255, 0.12);
+    --primary: #10b981;
+    --accent: #f59e0b;
+    --edu-year-bg: linear-gradient(90deg, #10b981, #f59e0b);
+    --edu-year-text: #0a0e27;
+    --edu-college: #8b94a5;
+    --nav-text: #f1f5f9;
+    --social-bg: rgba(255, 255, 255, 0.06);
+    --social-hover: rgba(255, 255, 255, 0.12);
     --icon-filter: invert(0);
-    --resume-text: #020617;
-    --section-label: rgba(56, 189, 248, 0.45);
-    --orb1-color: rgba(56, 189, 248, 0.12);
-    --orb2-color: rgba(207, 81, 194, 0.10);
+    --resume-text: #0a0e27;
+    --section-label: rgba(16, 185, 129, 0.5);
+    --orb1-color: rgba(16, 185, 129, 0.10);
+    --orb2-color: rgba(245, 158, 11, 0.08);
 }
 
 /* ── 3. Reset ── */
