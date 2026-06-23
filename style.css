@@ -34,7 +34,7 @@ html {
 [data-theme="light"] {
     --bg: #c8e1b6;
     --bg-secondary: #c7e3ad;
-    --text: #0f172a;
+    --text: #000000;
     --text-muted: #475569;
     --glass-bg: rgba(255, 255, 255, 0.55);
     --glass-bg-hover: rgba(255, 255, 255, 0.75);
